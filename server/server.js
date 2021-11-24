@@ -9,6 +9,7 @@ require('dotenv').config();
 app.use(bodyParser.json());
 app.use(cors());
 
-const port = process.env.PORT
+const port = process.env.PORT;
+
 
 app.listen(port || 3000, () => console.log(`App is running on port: http://localhost:${port}`));
